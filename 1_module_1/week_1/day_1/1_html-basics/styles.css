@@ -1,0 +1,23 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+
+body {
+    font-family: overpass;
+}
+
+.red-square {
+    height: 200px;
+    width: 200px;
+    background: #dc3939e6;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+.table, .table .cell {
+    border: 1px solid;
+    text-align: center;
+}

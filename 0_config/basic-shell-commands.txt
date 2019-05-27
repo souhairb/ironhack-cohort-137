@@ -1,0 +1,17 @@
+cd : change directory
+
+cd / : navigate to the root of your filesystem
+cd .. : (go one level up)
+cd ../../../ : (go three levels up)
+cd code : navigate to a folder named "code"
+
+pwd : prints the current path in filesystem
+ls : list files + folders
+ls -a : list files + folders (details)
+
+touch filename.ext : create a filename
+mkdir  foldername : create a new folder
+
+rm filename.ext
+rm -rf foldername : delete a folder AND all its contents
+rmdir : only works for empty folder

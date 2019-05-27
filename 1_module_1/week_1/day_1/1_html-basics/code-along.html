@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 1 - code along !!!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">home</a>
+        <a href="code-along.html">practice</a>
+    </nav>
+
+    <h1 class="title">HTML basics</h1>
+
+    <p>
+        HTML is all about structuring your pages.<br>
+        HTML doesn't care about styling... But browsers prodive some default styling. <br>
+        HTML is the basic block of your apps, so treat it carefully. You must <strong>validate</strong> your code
+        !!!<br>
+        It's simple but not <em>simplistic</em> : hence you can do powerfull things with simple rules !
+    </p>
+    <hr>
+    <p>
+        Consider any HTMl document as a tree.<br>
+        This document tree has a single root : &lt;html&gt;<br>
+        The root tag contains 2 children : &lt;head&gt; and &lt;body&gt;<br>
+        &lt;head&gt; contains all metadata : a mandatory title tag and optional links, scripts, meta, etc.<br>
+        All these tag are node elements of the document tree.
+    </p>
+    <hr>
+    <p>
+        If it's not a tag, it's a a text node : containing regular text (not hyper-text).
+    </p>
+    <hr>
+    <h2 class="title">Blocks and inline</h2>
+    <div class="red-square">
+        <span>hello</span>&nbsp;<i>world</i>&nbsp;<em>!!!</em>
+    </div>
+
+    <div class="red-square" style="color: lightcyan"><span>inline</span> <b>tags</b>
+    </div>
+
+    <h2 class="title">coding along</h2>
+    <h3 class="title">a simple table</h3>
+    <!-- copy line : option + maj + arrow up/down -->
+    <!-- use emmet :  table>(tr>td*2)*2 -->
+    <table class="table simple">
+        <tr>
+            <td class="cell">aces</td>
+            <td class="cell">spades</td>
+        </tr>
+        <tr>
+            <td class="cell">hearts</td>
+            <td class="cell">diamonds</td>
+        </tr>
+    </table>
+
+    <h3 class="title">a more complex table</h3>
+    <table class="table complex">
+        <thead>
+            <tr>
+                <th class="cell" colspan="2"></th>
+                <th class="cell" colspan="2">1st group</th>
+                <th class="cell" colspan="2">2nd group</th>
+            </tr>
+            <tr>
+                <th class="cell"></th>
+                <th class="cell">Personne</th>
+                <th class="cell">singulier</th>
+                <th class="cell">pluriel</th>
+                <th class="cell">singulier</th>
+                <th class="cell">pluriel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">présent</td>
+                <td class="cell">1</td>
+                <td class="cell">je code</td>
+                <td class="cell">nous codons</td>
+                <td class="cell">je réussis</td>
+                <td class="cell">nous réussissons</td>
+            </tr>
+            <tr>
+                <td class="cell">2</td>
+                <td class="cell">tu codes</td>
+                <td class="cell">vous codez</td>
+                <td class="cell">tu réussis</td>
+                <td class="cell">vous réussissez</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="cell">il/elle code</td>
+                <td class="cell">ils/elles codent</td>
+                <td class="cell">il/elle réussit</td>
+                <td class="cell">ils/elles réussissent</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 class="title">Complex list</h3>
+    <ol>
+        <li>1.1</li>
+        <li>
+            2.1
+            <ul>
+                <li>
+                    <ol>
+                        <li>3.1</li>
+                        <li>3.2</li>
+                        <li>3.3</li>
+                    </ol>
+                </li>
+                <li>2.2</li>
+                <li>2.3</li>
+            </ul>
+        </li>
+        <li>1.2</li>
+        <li>1.3</li>
+    </ol>
+
+    <hr>
+</body>
+
+</html>
