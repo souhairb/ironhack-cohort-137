@@ -1,0 +1,8 @@
+1 - create a remote repo on github
+2 - initialize your local working folder : $ git init
+3 - check your local status with: $ git status
+4 - add all files and folders with: $ git add .
+5 - check your  status and and see : $ git status
+6 - create your first commit : $ git commit -m "my commit short description"
+7 - git push origin master
+
