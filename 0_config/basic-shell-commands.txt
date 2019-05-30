@@ -15,3 +15,7 @@ mkdir  foldername : create a new folder
 rm filename.ext
 rm -rf foldername : delete a folder AND all its contents
 rmdir : only works for empty folder
+
+for mac users: 
+clear hide previous commands
+ CMD + K : clear the terminal
