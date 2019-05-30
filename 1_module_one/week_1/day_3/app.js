@@ -24,6 +24,13 @@ console.log("ready to rock !");
         }
     }
 
+    sayHello();
+    sayHello("Majdi")
+
+
+
+
+
     sayHello(user);
     sayHello("Ismaël");
     sayHello("Elin");
