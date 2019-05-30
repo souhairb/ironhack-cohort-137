@@ -1,0 +1,51 @@
+1 / congratulation for yesterday's lab => the spirit is there. 
+2 / keep up, stay motivated : this is only week 1, 9 still ahead.
+3 / if you feel lost, ask for help, don't hesitate : we're a team !
+
+So...
+
+Any question :?
+
+-------------------------------------------------------------------
+
+random reviews =)
+
+/* css selectors Read these lines and figure what's selected  */
+
+div p, section h1
+div > p, section h1
+.div, .span
+#thing, #other_thing
+#thing #other_thing
+#thing > #other_thing
+.student:hover
+section#shop nav :hover
+nav :hover
+#shop + .btn
+#shop ~ .btn
+#shop nav *
+
+Let's review :
+
+- data types
+- truthy/falsy
+- function / param / return
+- built in functions and return values : check mdn
+
+--------------
+Today lessons:
+--------------
+
+- fat arrow functions
+- Array.prototype
+- Array.forEach
+- Array.filter
+- Array.reduce
+- Array.sort
+
+we'll do some code-along practice
+
+then : you will be challenged with a cool pair programing lab
+
+
+

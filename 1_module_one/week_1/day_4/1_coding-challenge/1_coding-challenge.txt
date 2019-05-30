@@ -1,0 +1,7 @@
+
+Day 4 - Coding Challenge (30 min)
+
+- code a nav linking HTML 3 pages 
+- handwrite a JS for loop, counting from 1 to 100
+- handwrite a JS while loop, counting from 0 to 100
+- BONUS: check MDN doc for JS expressions

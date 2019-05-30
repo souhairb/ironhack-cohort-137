@@ -1,0 +1,40 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass-mono.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: overpass-mono;
+    padding: 20px;
+} 
+
+#form_contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+}
+
+#form_contact input, #form_contact textarea {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: .3rem;
+}
+
+#form_contact label {
+    cursor: pointer;
+}
+
+#form_contact .btn {
+    height: 32px;
+    width: 120px;
+    border: 1Px solid;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+#form_contact .btn:hover {
+    background: dodgerblue;
+    color: white;
+}
