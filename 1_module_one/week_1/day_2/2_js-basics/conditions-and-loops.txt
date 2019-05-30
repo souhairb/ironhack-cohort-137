@@ -1,0 +1,96 @@
+CONDITIONALS + LOOPS
+
+falsy => 
+- false
+- undefined
+- null
+- ""
+- 0
+- NaN
+
+var truthy = true;
+
+if (truthy) {
+    alert("Yay !!")
+} else {
+    alert("Nay !!")
+}
+
+if (1 < 2) {
+    alert("Yay !!")
+} 
+if (3 === 4) {
+    alert("Yay !!")
+} 
+if (NaN) {
+    alert("Yay !!")
+} 
+
+if (1 < 2) {
+    console.log("first solution");
+} else if (true) {
+    console.log("2nd solution");
+} else {
+    console.log("3rd solution");
+}
+
+
+LOOPS
+
+- for (special for arrays... kinda)
+
+for (let i = 0; i < 99; i += 1) { // or ++
+    console.log(i);
+}
+
+- while (has to stop sometime ^^)
+
+var count = 20;
+
+while (count) {
+    console.log("don't eat my memory (RAM)");
+    count--;
+}
+
+// do... while (eat your soup and then  you will have candy)
+
+var data = "";
+
+do {
+    data = window.prompt("favorite color ?");
+
+} while(data === "");
+
+var cat = {
+    name: "kitty",
+    age: 6,
+    isCute: true
+}
+
+// for in (loop over object litterals key/values)
+
+for (let key in cat) {
+    console.log(key + " - " + cat[key]);
+}
+
+- forEach
+
+var list = [1, 2, 44, 654, 78909712];
+
+list.forEach(nb => {
+    console.log(nb)
+});
+
+list.forEach(function(n) {
+    console.log(n)
+});
+
+
+######### @gui check #########
+
+- for (let val of list) {
+    
+}
+
+
+

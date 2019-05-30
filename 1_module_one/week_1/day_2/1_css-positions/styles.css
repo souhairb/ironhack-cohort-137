@@ -1,0 +1,117 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: overpass;
+    margin: 0;
+    font-size: 16px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.box.blue {
+    background: dodgerblue;
+}
+
+.box.red {
+    left: 50px;
+    top: 50px;
+    background: firebrick;
+}
+
+.target {
+    height: 50px;
+    width: 50px;
+    border: 2px dashed;
+    top: 40%;
+    left: 40%;
+    position: absolute;
+}
+
+#header_main {
+    top: 0;
+    width: 100%;
+    background: rgb(65, 65, 70);
+    color: white;
+    height: 60px;
+    z-index: 10;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+#main {
+    top: 60px;
+    position: relative;
+    display: flex;
+    min-height: 200vh;
+}
+
+#main > * {
+    padding: 20px;
+}
+
+#content_main {
+    flex: 0 0 70%;
+}
+
+#sidebar_main {
+    background: #865ecc;
+    min-height: 100%;
+    flex: 0 0 30%;
+}
+
+#sidebar_main nav {
+    border: 2px dashed black;
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#footer_main  {
+    position: fixed;
+    bottom: 0;
+    background: #414145;
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+/* media queries !!!  */
+/* usefull for responsive design */
+@media (max-width: 475px) {
+    /* these rules will only apply if the screen is 475px and below */
+    #main {
+        flex-direction: column;
+        min-height: 120vh;
+    }
+
+    #sidebar_main {
+        margin-top: 40px;
+        max-height: 33vh;
+    }
+}
+

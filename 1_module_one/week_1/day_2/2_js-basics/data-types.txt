@@ -1,0 +1,93 @@
+JS TYPES
+
+--- primitives types
+number -oo : +oo ( .... and the feared and mighty NaN)
+string => "hello world" | 'hello world'
+boolean => true OR false
+
+BOOLEAN LAW
+
+(logical AND law)
+true &&  true => true
+false && false => false
+true && false => false
+false && true => false
+
+(logical OR law)
+true ||  true => true
+false || false => false
+true || false => true
+false || true => true
+
+not true => false
+not false => true
+
+--- complex types
+null
+undefined
+
+object(s)
+
+var JSBox = {
+    jsIsFun: true,
+    dateOfBirth: 1995,
+    inventor: "Brendan Eich",
+    age: 24,
+    dateOfDeath: null,
+    bestBrowserBase: {
+        name: "chromium",
+        brand: "google"
+    }
+};
+
+JSBox.jsIsFun
+JSBox.dateOfBirth
+JSBox.choubidooooo // undefined
+JSBox.bestBrowserBase.name
+
+---- Arrays are a type of objects ----
+var list = [1, 2, 44, 654, 78909712];
+
+
+---------------------
+OPERATORS
+---------------------
+Numeric
+
++
+-
+*
+/
+%
+
+logical
+
+&& (and)
+|| (or)
+
+comparison
+>
+>=
+<
+<=
+==
+===
+!=
+!==
+
+---- advanced ----
+
+ternary :  boolean expression ?  res1 : res2
+spread  :  ...
+
+
+
+
+
+
+
+
+
+
+
+
