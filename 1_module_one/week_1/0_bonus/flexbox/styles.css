@@ -1,0 +1,16 @@
+.wrap {
+    background: orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    height: 100px;
+    background: red;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.wrap .box:last-of-type {
+    margin-right: 0;
+}
