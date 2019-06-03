@@ -92,8 +92,19 @@ function addStudents(list) {
     });
 }
 
-function simpleCallBack() {
-    alert("hello you !!!");
+function simpleCallBack(evt) { // implicit argument
+
+    console.log(evt.target); // represents the element that triggered the click event
+
+    // 1 - get the source of the click event
+    // 2 - check the presence of a "is-active" css class :
+    //  if NOT present => add the class "is-active" 
+    //  else  => remove the class "is-active" 
+
+    evt.target.classList.toggle("is-active"); // works as the if/else statement below
+    
+    if (evt.target.classList.contains("is-active")) evt.target.style.fontSize = "20px";
+    else evt.target.style.fontSize = "16px";
 }
 
 function listenToClicks() {
@@ -110,27 +121,31 @@ function listenToClicks() {
 function start() {
     // this function will be executed on DOMContentLoaded ...
     const btn = document.getElementById("add_students");
-    listenToClicks();
+
     getTitleMainInfos();
-    parseStudents();
+    // parseStudents();
+    
     console.log(useGetElementsByTagName("meta"));
     console.log(useGetElementsByClassName("box"));
     console.log(useQuerySelector("head"));
     console.log(useQuerySelector("body"));
     console.log(useQuerySelector("#students"));
     console.log(useQuerySelector("#students > *"));
+
     const oddStudents = useQuerySelectorAll("#students .student:nth-child(odd)")
+    // console.log(oddStudents);
 
-    console.log(oddStudents);
-    modifyElements(oddStudents);
-
+    modifyElements(oddStudents); // let's add some html content to these odd elements !
+    
     // btn.onclick = simpleCallBack; // event listener = event handler 
-    // btn.addEventListener("click", simpleCallBack); // synonym
-
+    // btn.addEventListener("click", simpleCallBack); // synonym for above instruction !!!
+    
+    listenToClicks(); // listen to click on each student elements
+    
     btn.onclick = function() {
         addStudents([{name: "foo", age: 19}, {name: "bar", age: 27}, {name: "baz", age: 41}]);
-        parseStudents();
-        listenToClicks()
+        listenToClicks(); // listen to click on each student elements, including the newly added ones
+        // parseStudents();
     }
 }
 window.addEventListener("DOMContentLoaded", start);

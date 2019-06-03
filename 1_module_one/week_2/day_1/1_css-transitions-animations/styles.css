@@ -28,6 +28,7 @@ body {
 .boxes {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box:hover {
@@ -35,13 +36,17 @@ body {
     cursor: pointer;
     color: white;
     font-weight: bold;
-    animation: 1s linear infinite alternate shrink;
+    /* animation: 1s linear infinite alternate shrink; */
+}
+
+.box.is-active {
+    border-color: darkorange
 }
 
 .box {
     align-items: center;
     background: transparent;
-    border: 2px dashed;
+    border: 5px dashed;
     display: flex;
     justify-content: center;
     height: 200px;
