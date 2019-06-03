@@ -1,0 +1,52 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: overpass;
+}
+
+@keyframes shrink {
+    from {
+        height: 200px;
+        width: 200px;
+        border-radius: 0%;
+        border-width: 2px;
+    }
+    to {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border-width: 0;
+    }
+}
+
+/* check animista CSS website !!! */
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box:hover {
+    background: dodgerblue;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    animation: 1s linear infinite alternate shrink;
+}
+
+.box {
+    align-items: center;
+    background: transparent;
+    border: 2px dashed;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    transition: background 1s linear;
+    width: 200px;
+}
+
+
