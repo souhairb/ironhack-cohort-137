@@ -1,0 +1,30 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+
+body {
+    font-family: overpass;
+}
+
+#top_buttons {
+    display: flex;
+    max-width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.btn {
+    outline: none;
+    border: 2px solid black;
+    border-radius: .4rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn.is-active {
+    background: black;
+    color: white;
+}
