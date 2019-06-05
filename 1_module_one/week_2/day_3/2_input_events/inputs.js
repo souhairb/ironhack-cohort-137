@@ -1,15 +1,18 @@
+function displayPlayerCount(count) {
+    const displayer = document.getElementById("player_count");
+    displayer.textContent = count;
+}
+
 function listenRange(evt) {
-    // console.log(evt);
     const target = evt.target || evt.srcElement;
-    console.log("input event", target.value);
+    displayPlayerCount(target.value);
 }
 
 function start() {
     const range = document.getElementById("my_first_range");
-    console.log(range); // object HTML
-
-    // range.addEventListener("input", listenRange); same as ...
+    const number = document.getElementById("my_first_number");
     range.oninput = listenRange;
+    number.oninput = listenRange;
 }
 
 window.addEventListener("DOMContentLoaded", start);
