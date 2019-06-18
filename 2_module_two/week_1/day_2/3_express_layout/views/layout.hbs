@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Express Simple Template</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/client.js" type="module"></script>
+</head>
+<body>
+    <header>
+        {{> nav_main}} 
+        {{!-- view partial !!!! --}}
+    </header>
+    {{{ body }}}
+    <footer>
+        {{!-- {{> nav_main}} --}}
+    </footer>
+    {{!-- body is a placeholder containing ANY page of our app --}}
+</body>
+</html>

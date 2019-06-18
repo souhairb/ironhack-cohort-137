@@ -1,0 +1,13 @@
+<h1 class="title">{{title}}</h1>
+<ul>
+    {{#each students}}
+    <li>
+        {{ this }}
+    </li>
+    {{/each}}
+</ul>
+{{#unless students}}
+<p>
+    no students yet
+</p>
+{{/unless}}
