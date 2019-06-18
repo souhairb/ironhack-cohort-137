@@ -27,11 +27,11 @@ class Sneaker {
         const timing = 5000;
 
         setInterval(function() { // function keyword func redefine their own this
-            // console.log("x", this.isDiscount); // undefined
+            console.log("x", this.isDiscount); // undefined
         }, timing);
-
+        
         setInterval(() => { // you can use ()=> to keep "this" tied to the class
-            console.log(`${this.name} is ${this.isDiscount ? "discounted" : "not discounted"} \n ----`); // false
+            // console.log(`${this.name} is ${this.isDiscount ? "discounted" : "not discounted"} \n ----`); // false
         }, timing);
     }
 
@@ -45,7 +45,24 @@ const sneaker2 = new Sneaker("Nike", "Jordan V", 250, [44, 46]);
 
 console.log("------SNEAKERS-------");
 console.log(sneaker1);
+
 console.log("-------------");
 console.log(sneaker2);
 console.log("-------------");
 
+
+
+
+// function x() {
+
+// }
+
+// x();
+
+// const xx = () => {
+//     return "foo";
+// }
+
+// xx();
+
+// setTimeout(() => "foo", 10000);
