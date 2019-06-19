@@ -8,3 +8,17 @@ body {
     font-size: 16px;
     font-family: overpass-mono;
 }
+
+.home {
+    background: silver;
+}
+
+.students {
+    background: lightblue;
+}
+
+
+body.is-dark {
+    background: black;
+    color: white
+}

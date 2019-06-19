@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Express Simple Template</title>
     <link rel="stylesheet" href="./css/styles.css">
+    {{#each cssSheets}}
+    <link rel="stylesheet" href="./css/{{this}}.css">
+    {{/each}}
     <script src="./js/client.js" type="module"></script>
 </head>
-<body>
+<body class="{{bodyClass}}">
     <header>
+        <span>hey ! welcome back {{user}}</span>
         {{> nav_main}} 
         {{!-- view partial !!!! --}}
     </header>
