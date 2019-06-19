@@ -1,0 +1,38 @@
+<h1 class="title">{{title}}</h1>
+<h2 class="title">Express + Mongoose</h2>
+<ol>
+    <li>$ mkdir express-simple-template</li>
+    <li>$ cd ./express-simple-template</li>
+    <li>$ npm init -y</li>
+    <li>$ npm install --save express hbs dotenv mongoose</li>
+    <li>$ git init</li>
+    <li>$ touch .gitignore</li>
+    <li>$ touch server.js</li>
+    <li>$ touch .env</li>
+    <li>$ mkdir ./views ./views/partials</li>
+    <li>$ touch ./views/layout.hbs ./views/home.hbs ./views/students.hbs</li>
+    <li>$ touch ./views/partials/nav_main.hbs</li>
+    <li>$ mkdir ./public ./public/img ./public/css ./public/js</li>
+    <li>$ touch ./public/css/styles.css</li>
+    <li>$ touch ./public/js/client.js</li>
+    <li>$ mkdir ./config</li>
+    <li>$ touch ./config/dbconfig.js</li>
+    <li>$ mkdir ./models</li>
+    <li>$ touch ./models/student.js</li>
+    <li>$ code .</li>
+</ol>
+<hr>
+<p>
+    (if in a new git local repo) Edit .gitignore <br>
+    Add this on line 1:<br>
+    node_modules/
+</p>
+<hr>
+<p>
+    Add this to the scripts object in package.json <br>
+    "dev": "nodemon ./server.js -e hbs,js"
+</p>
+<hr>
+<p>
+    <b>$ npm run dev</b>
+</p>

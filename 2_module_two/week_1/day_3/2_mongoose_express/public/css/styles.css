@@ -1,0 +1,41 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass-mono.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: overpass-mono;
+}
+
+#form_student {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#form_student label {
+    cursor: pointer;
+}
+
+#form_student input {
+    border: 2px solid;
+    height: 32px;
+}
+
+#form_student input:last-of-type {
+    margin-bottom: 20px;
+}
+
+#form_student label {
+    margin: 10px 0;
+}
+
+.btn {
+    border: 2px solid;
+    border-radius: .3rem;
+    padding: 6px;
+    width: 120px;
+    cursor: pointer;
+}
