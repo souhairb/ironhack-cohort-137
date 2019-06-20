@@ -25,49 +25,8 @@ app.use(express.urlencoded()); // parse posted strings
 
 const Student = require("./models/student");
 
-// SMALL TEMPORARY UTIL FUNCTION
-function createStudent() {
-  Student.create({
-    age: 23,
-    cohort: 137,
-    email: "foo@baz.com",
-    firstname: "inga",
-    lastname: "bar",
-  }).then(createdUser => {
-
-    console.log("student created", createdUser);
-
-    setTimeout(() => {
-      updateUser(createdUser._id);
-
-      setTimeout(() => {
-        deleteUser(createdUser._id);
-      }, 4000);
-    }, 3000);
-  })
-}
-
-// createStudent();
-
-function updateUser(id) {
-  Student.findByIdAndUpdate(id, { email: "updated@mail.com" })
-  .then(res => {
-    console.log("user updated", res);
-  })
-  .catch(err => {
-    console.error(err);
-  });
-}
-
-function deleteUser(id) {
-  Student.findByIdAndRemove(id)
-  .then(res => {
-    console.log("user removed from db", res);
-  })
-  .catch(err => {
-    console.error(err);
-  });
-}
+// const utils = require("./easy-crud-function");
+// utils.createStudent();
 
 //********************************/
 // ROUTING
@@ -95,10 +54,10 @@ app.get("/create-student", (req, res) => { // display the page
 });
 
 app.post("/create-student", (req, res) => { // use posted data to feed db
-  console.log("@post");
+  console.log("@ /create-student");
   console.log(req.body);
   // req.body holds the posted values ...
-  const { age, cohort, email, firstname, lastname } = req.body;
+  const { age, email, firstname, lastname } = req.body;
   // above : destructuring req.body properties into sperated vars ...
   // now we can use our model to insert a new student !!!
   Student.create({ // Mongoose.create returns a promise !!!
