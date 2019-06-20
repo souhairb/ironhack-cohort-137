@@ -1,0 +1,18 @@
+<h1 class="title">{{title}}</h1>
+
+{{#unless students}}
+<p>no students yet</p>
+{{/unless}}
+
+{{#if students}}
+<ul class="list user">
+    {{#each students}}
+    <li class="item">
+        <a href="/students/{{this._id}}" class="no-style">
+            {{ this.firstname }} - {{ this.lastname }}
+            <a href="/delete-student/{{this._id}}" title="delete this user">X</a>
+        </a>
+    </li>
+    {{/each}}
+</ul>
+{{/if}}
